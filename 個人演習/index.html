@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<!-- jQuary -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+	<header class="header">
+		<!--------------------------- ナビゲーション領域 -->
+		<nav class="nav">
+			<ul>
+				<li><a href="#about-camp">キャンプとは</span> </a></li>
+				<li><a href="#tent">天幕</a></li>
+				<li><a href="#bonfire">焚火台</a></li>
+				<li><a href="#komono">小物類</a></li>
+				<li><a href="camp.html">秘密基地</a></li>
+			</ul>
+		</nav>
+
+
+
+		<div class="">
+			<div class="">
+				<video id="video" class="c-objectfit-video is-view" src="images/myvideo.mov" type="video/mov" muted=""
+					autoplay="" webkit-playsinline="" playsinline="" loop="" preload="">
+				</video>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="wrapper">
+		<main class="main">
+
+			<!-- -----------------------------------------------きゃんぷとは-------------------------------------------------------------- -->
+			<div class="content" id="about-camp">
+				<h1 class="title-class">- CAMPとは？ -</h1>
+				<p class="menu">
+					キャンプ（Camp）という言葉※には、本来、
+					「兵士が天幕に泊まって宿営している場所、あるいはその訓練を受けている場所」<br>
+					「人が集まる場所」という意味が含まれています。
+					日本キャンプ協会のキャンプインストラクター用テキストでは、
+					自然環境のもとで、必要最小限の装備で生活したり宿泊したり活動したりすることをキャンプと呼びます。
+				</p>
+				<h1 class="title-class">- CAMPのスタイル -</h1>
+				<h4 class="title-class">3つのスタイルを紹介</h4>
+
+				<div class="camp-style">
+					<div class="camp-image">
+						<img src="https://kriffmayer.jp/wp-content/uploads/2021/06/20210625_01-1250x833.jpg"
+							style="width: 400px;">
+					</div>
+					<div class="camp-text">
+						<h4 class="camp-style-text">- ファミリーキャンプ、グループキャンプ -</h4>
+						<p class="camp-text">
+							グループキャンプとは、大人数・いくつかのファミリーでキャンプをすること。<br>
+							みんなでワイワイしたり、料理をシェアしたり、分担して準備などをしたり・・・。
+							グループキャンプだからこその楽しさがありますよ。
+							集まっているグループの人たちは、もともと普段からの仲間である場合と、
+							SNSなどのインターネットを通じて知り合い、キャンプの日が初対面の方という場合もあります<br>
+							<br><strong>【おすすめポイント】</strong><br>
+							大人数でわいわいが好きな方。お友達同士。<br>
+							僕は少人数がすきなのでおすすめは特になし。
+						</p>
+					</div>
+				</div>
+
+
+				<div class="camp-style" id="solo">
+					<div class="camp-image">
+						<img src="https://web.goout.jp/wp-content/uploads/2020/12/6505.jpg" style="width: 400px;">
+					</div>
+					<div class="camp-text">
+						<h4 class="camp-style-text">- ソロキャンプ -</h4>
+						<p class="camp-text-right">
+							ソロキャンプとは、一人でオートキャンプ場などにテントなどを持参して行うキャンプ（野宿）のことで、新しいアウトドアとして、
+							自立志向の高い若者を中心に盛んに行われています。ソロキャンプでは、誰にも束縛されることなく自由に自分だけの時間を過ごすことができます。
+							キャンプの醍醐味である焚き火なども、一人で楽しめます。<br>
+							<br><strong>【おすすめポイント】</strong><br>
+							誰にも気を遣わず自由を満喫「自分のペースで過ごせる」<br>
+							食事に気を使う心配なし（缶詰、カップ麺でOK）<br>
+							誰にも邪魔されず自分のためだけの時間を過ごせる「自分自身と向き合える」等...<br>
+						</p>
+					</div>
+				</div>
+
+
+				<div class="camp-style">
+					<div class="camp-image">
+						<iframe class="iframe" width="400" height="267" src="https://www.youtube.com/embed/_8wwAwEDeGo"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<div class="camp-text">
+						<h4 class="camp-style-text">- ブッシュクラフト -</h4>
+						<p class="camp-text-right">
+							野性的で、マニアックなキャンプスタイル<br>
+							僅かな装備だけを持って一人、野山に分け入り、過酷な環境で敢えて過ごす。<br>
+							文明の利器を使わず、原始的な方法や道具で野外生活を過ごす<br>
+							頑強なナイフを腰にぶら下げ、火花を飛ばすファイアースタータを使って火おこしをしたり、
+							布一枚のシェルターで一夜を明かす。素人は手を出すことないスタイル<br>
+							<br><strong>【おすすめポイント】</strong><br>
+							私も未知な世界...。<br>
+							おすすめはできませんが、おすすめの動画はあるのでご参考に
+
+						</p>
+
+					</div>
+				</div>
+
+
+			</div>
+
+
+			<!-- テントメニュー -->
+			<div>
+				<h2>テント</h2>
+				<hr>
+				<!---------------------------------------- スノーピーク ---------------------------------------------------------->
+				<div class="content-class" id="tent">
+					<!-- イメージ画像 -->
+					<div class="div-images">
+						<img src="https://snowpeak-ec.s3.amazonaws.com/sys-master/AmazonS3Images/hbf/hf4/8865933983774/SDE-001RH_main_515Wx515H"
+							class="image-class" name="tent-image">
+						<img src="https://snowpeak-ec.s3.amazonaws.com/sys-master/AmazonS3Images/hd1/h4a/8824520933406/SDE-001RH_switch2_515Wx515H"
+							class="image-class" name="tent-image">
+					</div>
+
+					<div class="text">
+						<div class="">
+							<p class="recomend-text">Made in Japan ! 安定の品質</p><br>
+							<h3 class="content-text1">
+								<span class="prodact-text">スノーピーク</span><br>
+								<span class="content-text">商品名: アメニティドーム</span><br>
+								<span class="price-text">¥32,000円～¥54,000円(税込)(S,M,L)</span>
+
+							</h3>
+							<p class="content-text2">
+								高品質のスペックでありながら、お求め易い価格帯<br>
+								入門用テントとして圧倒的な人気を誇る<br>
+								スノーピークの超ベストセラーテント。<br>
+								<hr>
+								<strong>【Toyama's memo】</strong><br>
+								Made in Japan!の信頼性<br>
+								これからキャンプを始めるなら候補の一つ<br>
+								人気過ぎてそこら中スノーピークだらけ<br>
+								自分のテントに帰れるように歩いた道に目印を！
+							</p>
+						</div>
+						<p>商品ページ:<a
+								href="https://ec.snowpeak.co.jp/snowpeak/ja/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97/%E3%83%86%E3%83%B3%E3%83%88/%E3%82%A2%E3%83%A1%E3%83%8B%E3%83%86%E3%82%A3%E3%83%89%E3%83%BC%E3%83%A0M/p/121327"
+								target="_blank" class="">スノーピーク</a></p>
+
+					</div>
+				</div>
+
+				<!-------------------------------------------- ヘイムプラネット ----------------------------------------------------------->
+				<div class="content-class" id="">
+					<!-- イメージ画像 -->
+					<div class="div-images">
+						<img src="http://heimplanet.co/images/product/tent/cave/camo.jpg" class="image-class" id="cave"
+							name="tent-image">
+						<img src="http://heimplanet.co/images/top/anime.gif" class="image-class" name="tent-image">
+					</div>
+					<div class="text">
+						<div class="">
+							<p class="recomend-text">私も愛用！ 次世代テント</p><br>
+							<h3 class="content-text1">
+								<span class="prodact-text">ヘイムプラネット</span><br>
+								<span class="content-text">商品名: ケイブ</span><br>
+								<span class="price-text">¥95,300円(税込)</span><br>
+							</h3>
+							<p class="content-text2">
+								空気を入れて立ち上がるエアフレームテント<br>
+								INFLATABLE DIAMOND GRIDと名付けられた5角形の構造を持つエアフレームは、
+								独立した5つの空気室から成り、
+								優れたスタビリティーと、早くそして容易なテントのセットアップを実現しました。<br>
+								<hr>
+								<strong>【Toyama's memo】</strong><br>
+								画期的なアイディアだと思い勢いだけで購入<br>
+								日本の流通がすくなかったのでヨーロッパから取り寄せる<br>
+								はじめにフレームとテントを金具にひっかけるだけで<br>
+								次回から空気を入れるだけでテント設営が出来るお手軽さ<br>
+								マイナス点は日本流通が少ない事と<br>
+								別売りの専用空気入れも必要、それと荷物がかさばる点がマイナス<br>
+							</p>
+							<p>商品ページ:<a href="http://heimplanet.co/" target="_blank" class="">ヘイムプラネット</a></p>
+						</div>
+					</div>
+				</div>
+				<!-------------------------------------------------------- バンドック ------------------------------------------------------->
+				<div class="content-class" id="">
+					<!-- イメージ画像 -->
+					<div class="div-images">
+						<img src="http://kawase-net.jp/wp-content/uploads/2020/12/BDK-79TC-2.jpg" class="image-class"
+							name="tent-image">
+					</div>
+
+					<div class="text">
+						<div class="">
+							<p class="recomend-text">ソロキャンにおすすめ</p><br>
+							<h3 class="content-text1">
+								<span class="prodact-text">バンドック</span><br>
+								<span class="content-text">商品名: ソロ・ベース</span><br>
+								<span class="price-text">¥44,000円(税込)</span>
+
+							</h3>
+							<p class="content-text2">
+								ミリタリースタイルのキャンプを楽しめるソロベース。フライはポリエステルとコットンの混紡生地を使用しているため、夏は涼しく、冬は暖かい。また、水と汚れに強く、通気性も良いので結露しにくい。焚火の火の粉にも強く、ハイブリットな素材<br>
+								<hr>
+								<strong>【Toyama's memo】</strong><br>
+								こいつの進化版ソロベースEXを愛用中<br>
+								ソロベースとEXの違いはサイドウォールとスカートが追加された点<br>
+								サイドウォールにより居住スペースが拡大<br>
+								スカートの追加で隙間風を防ぎ、冬キャンプでも使用可能となった<br>
+								無骨で最小限の機能、男ならこいつ以外の選択肢無し！
+
+							</p>
+						</div>
+						<p>商品ページ:<a href="http://kawase-net.jp/brand/bundok/" target="_blank" class="">株式会社カワセ</a>
+						</p>
+
+					</div>
+				</div>
+
+				<!--------------------------------------------------- アライテント --------------------------------------------------------->
+				<div class="content-class" id="">
+					<!-- イメージ画像 -->
+					<div class="div-imagese">
+						<img src="https://arai-tent.co.jp/lineup/tent/images/air2_001b.jpg" class="image-class">
+						<img src="https://mft-blog.com/wp-content/uploads/2019/10/IMG_8270.jpg" class="image-class">
+
+					</div>
+
+					<div class="text">
+						<div class="">
+							<p class="recomend-text">山岳用テントという選択肢も</p><br>
+							<h3 class="content-text1">
+								<span class="prodact-text">アライテント</span><br>
+								<span class="content-text">商品名:エアライズ</span><br>
+								<span class="price-text">¥42,900～79,200(税込)</span><br>
+								(エアライズ1～4までサイズ展開)
+
+							</h3>
+							<!-- テキストエリア -->
+							<p class="content-text2">
+								熟練の職人技術を駆使し、高品質な登山テントを作り出す日本のアウトドア用品メーカー。
+								そんなアライテントが展開しているテントシリーズ「エアライズ」は、特に人気のモデルとして長年多くの人に支持されている。
+								登山用テントであることから、軽量で持ち運びやすい上、耐久性に優れる。
+
+								<hr>
+								<strong>【Toyama's memo】</strong><br>
+								テント泊登山で実際使用しているテントの一つ。<br>
+								友達と別々のテントで寝る際はこちらのテントで十分まかなえる<br>
+								エアライズ１は1~2名用にはなっているが、狭いのでエアライズ２がおすすめ。<br>
+								設置も2本のポールにテンションをかけるだけなので10分もあれば設営できます。<br>
+								画像はインナーテントのみ、使用時には雨除けのフライシートを被せて完成。
+
+							</p>
+						</div>
+						<p>商品ページ:<a href="https://arai-tent.co.jp/lineup/tent/air2.html" target="_blank"
+								class="">アライテント</a>
+						</p>
+					</div>
+				</div>
+
+				<!---------------------------------------------------- ノースフェイス ---------------------------------------------------------->
+				<div class="content-class" id="">
+					<!-- イメージ画像 -->
+					<div class="div-images">
+						<img src="https://campismfield.jp/wp-content/uploads/2018/09/%E3%82%B8%E3%82%AA%E3%83%89%E3%83%BC%E3%83%A04-3.jpg"
+							class="image-class">
+						<img src="https://justtime.jp/up/images/item/p3teybey178cty8qthvumkzudqttxd.jpg"
+							class="image-class">
+
+					</div>
+
+					<!-- コメント -->
+					<div class="text">
+						<div class="">
+							<p class="recomend-text">インスタ映え・見た目重視</p><br>
+							<h3 class="content-text">
+								<span class="prodact-text">THE NORTH FACE</span> <br>
+								<span class="content-text">ジオドーム 4</span><br>
+								<span class="price-text">¥198,000(税込) </span><br>
+							</h3>
+							<p class="">
+								バックミンスター・フラー博士の開発した<br>
+								ジオデシック構造とテンセグリティ構造を取り入れ、<br>
+								THE NORTH FACEの「DO MORE WITHLESS」の思想を体現した4人用ジオデシックドームテント。
+								わずか6本のポールで半球以上の高さを形成することにより、広い居住空間を提供。
+								重さ10kg強でコンパクトに収納でき、持ち運びにも容易。
+								フロアは防水性の高い9角形のバスタブ構造。
+								単体でも使用できる4つの取外し可能なオーガナイザーを配備。 <br>
+								<hr>
+								<strong>【Toyama's memo】</strong><br>
+								目立ちたがりの君はこいつを選べ！<br>
+								THE NORTH FACE のテント。
+								おれも使いたい！！
+							</p>
+						</div>
+						<p>商品ページ:<a href="https://www.goldwin.co.jp/ap/item/i/m/NV21800" target="_blank" class="">THE
+								NORTH FACE</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- ----------------------------------------------焚火の魅力----------------------------------------------------------------------------->
+			<div class="content" id="about-camp">
+				<h1 class="title-class" id="bonfire">- 焚火の魅力 -</h1>
+				<p class="menu">
+					暗闇の中で灯る明り、じんわりとした暖かさ、<br>
+					料理の美味しい臭い、炎のゆらめきと薪の爆ぜる音の癒やし効果。<br>
+					一人でいる時には孤独や不安を和らげてくれます。
+				</p>
+				<p class="iframe">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/kmythL1LppA"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</p>
+			</div>
+			<!--------------------------------------------------------- 焚火台 ------------------------------------------------------------->
+			<div>
+				<hr>
+				<!------------------------------------------------------スノーピーク ------------------------------------------------------->
+				<div class="content-class" id="">
+					<!-- イメージ画像 -->
+					<div class="div-images">
+						<img src="https://snowpeak-ec.s3.amazonaws.com/sys-master/AmazonS3Images/h7e/h79/8885087272990/ST-031R_main_515Wx515H"
+							name="tent-image" class="image-class">
+						<img src="https://snowpeak-ec.s3.amazonaws.com/sys-master/images/h71/hc3/8834657026078/web_2015_01_IMG03371.jpg"
+							name="tent-image" class="image-class">
+					</div>
+
+					<div class="text">
+						<div class="">
+							<p class="recomend-text">やはり Made in Japan! が安定</p><br>
+							<h3 class="content-text1">
+								<span class="prodact-text">スノーピーク</span><br>
+								<span class="content-text">商品名:焚火台</span><br>
+								<span class="price-text">¥9,460～¥32,780(税込)(S,M,L,LL)</span>
+
+							</h3>
+							<!-- テキストエリア -->
+							<p class="content-text2">
+								直火禁止をマナーとルールにした名品<br>
+								キャンパーとして常識のマナーに変え、「焚火台」という商品ジャンルが世の中に誕生するきっかけとなった。スノーピークを象徴するロングセラー製品。<br>
+								<hr>
+								<strong>【Toyama's memo】</strong><br>
+								キャンプを始めた当初に購入した一品<br>
+								少し重量があるものの、折り畳み式 + シンプルな構造<br>
+								使い方によって10年以上使えるサスティナブル製品<br>
+								炭床等が付いたコンプリートセットで買うのがおすすめ！
+							</p>
+						</div>
+						<p>商品ページ:<a
+								href="https://ec.snowpeak.co.jp/snowpeak/ja/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97/c/2010000?q=%3Acreationtime%3Acamp%3A2010210&text="
+								target="_blank" class="">スノーピーク</a></p>
+
+					</div>
+				</div>
+
+				<!----------------------------------------------------ソロストーブ ---------------------------------------------------------->
+				<div class="content-class" id="">
+					<!-- イメージ画像 -->
+					<div class="div-images">
+						<img src="https://cdn.shopify.com/s/files/1/0530/1482/3108/products/SSRAN-1.jpg?v=1617091553"
+							name="tent-image" class="image-class">
+					</div>
+
+					<div class="text">
+						<div class="">
+							<p class="recomend-text">アメリカサイズの焚火台</p><br>
+							<h3 class="content-text1">
+								<span class="prodact-text">ソロストーブ</span><br>
+								<span class="content-text">商品名:レンジャー</span><br>
+								<span class="price-text">¥36,300(税込)</span>
+
+							</h3>
+							<!-- テキストエリア -->
+							<p class="content-text2">
+								直径約38cmで内部に薪をいれて着火すると底部の通気口から取り込まれた空気が1次燃焼し、
+								さらに暖められた空気が二重壁の間を通って上部の通気口から出て2次燃焼することで、
+								非常に効率よく燃焼させる。<br>
+								<hr>
+								<strong>【Toyama's memo】</strong><br>
+								燃焼効率が良く、薪が燃え尽きるのは魅力的<br>
+								存在感からロマンが詰まった焚火台。<br>
+								ハイエース持ちなら迷わずこれを買え！！<br>
+								キャンプ場で注目を浴びること間違いなし！
+							</p>
+						</div>
+						<p>商品ページ:<a
+								href="https://store.upioutdoor.com/collections/solo-stove/products/solo-stove-ranger-kit"
+								target="_blank" class="">ソロストーブ</a></p>
+
+					</div>
+				</div>
+
+				<!-------------------------------------------------------ピコグリル ---------------------------------------------------------->
+				<div class="content-class" id="">
+					<!-- イメージ画像 -->
+					<div class="div-images">
+						<img src="images/picogrill.png" name="tent-image" class="image-class">
+					</div>
+
+					<div class="text">
+						<div class="">
+							<p class="recomend-text">キャンプ芸人ヒロシも愛用の焚火台</p><br>
+							<h3 class="content-text1">
+								<span class="prodact-text">スイス STC GmbH</span><br>
+								<span class="content-text">商品名:ピコグリル</span><br>
+								<span class="price-text">¥14,000～￥23,000(税込)<br>
+									(サイズ：398,498,760)</span、>
+
+							</h3>
+							<!-- テキストエリア -->
+							<p class="content-text2">
+								ピコグリル398は、折りたたんで専用袋に収納することでA4サイズのフラットな形に納めることができます。2枚のプレートを張り合わせてテンションを加えてフレームに固定するという独自の構造は唯一無二の斬新で合理的なデザインとして世界中のアウトドア界で高い評価を獲得。<br>
+								<hr>
+								<strong>【Toyama's memo】</strong><br>
+								A4サイズまで折りたたむことが可能な焚火台<br>
+								荷物を少なくさせたい玄人キャンパーに好まれる<br>
+								人気のあまり中華製の偽物が出るほど<br>
+								ちなみに僕が愛用している焚火台も中華製！！
+							</p>
+						</div>
+						<p>商品ページ:<a href="https://wanderlust-equipment.com/products/picogrill-398" target="_blank"
+								class="">ピコグリル</a></p>
+
+					</div>
+				</div>
+
+			</div>
+			<!-- ------------------------------------------------------------------------------------------------------------------------- -->
+			<!------------------------------------------------------ 小物類 ----------------------------------------------------------------->
+			<div id="komono">
+				<h2>小物類</h2>
+				<hr>
+				<!----------------------------------------------------ランタン------------------------------------------------------------ -->
+				<div name="light">
+					<h2>野電</h2>
+					<!-- 火ランタン -->
+					<div class="content-class" id="">
+						<!-- イメージ画像 -->
+						<div class="div-images">
+							<img src="https://www.star-corp.co.jp/shop/upload/save_image/02101645_56baea89bb161.jpg"
+								name="tent-image" class="image-class">
+						</div>
+
+						<div class="text">
+							<div class="">
+								<p class="recomend-text">最低限の機能、最低限の装飾</p><br>
+								<h3 class="content-text1">
+									<span class="prodact-text">フュアハンド</span><br>
+									<span class="content-text">商品名:ベイビースペシャル276 ジンク</span><br>
+									<span class="price-text">¥4,400(税込)</span>
+
+								</h3>
+								<!-- テキストエリア -->
+								<p class="content-text2">
+									マットシルバーのベーシックモデル。<br>
+									亜鉛メッキ処理された本体は錆びにくく、
+									少々強い風が吹いても安定して燃焼するとても使いやすいランタン。
+									<hr>
+									<strong>【Toyama's memo】</strong><br>
+									LEDライトを買った後、LEDでは物足りなさを感じ購入。<br>
+									シンプルな構造なので初心者でも扱いやすい。<br>
+									正規代理店が交換部品を取り扱っているので長く使えるのも魅力。
+								</p>
+							</div>
+							<p>商品ページ:<a href="https://www.star-corp.co.jp/shop/products/detail.php?product_id=100584"
+									target="_blank" class="">フュアハンド</a></p>
+						</div>
+					</div>
+
+					<!-- LEDライト -->
+					<div class="content-class" id="">
+						<!-- イメージ画像 -->
+						<div class="div-images">
+							<img src="https://www.logos.ne.jp/storage/ec/products/74176021/74176021_m1.jpg"
+								name="tent-image" class="image-class">
+						</div>
+						<div class="text">
+							<div class="">
+								<p class="recomend-text">安全を優先したLEDタイプ</p><br>
+								<h3 class="content-text1">
+									<span class="prodact-text">ロゴス</span><br>
+									<span class="content-text">商品名:パワーストックランタン</span><br>
+									<span class="price-text">¥21890～¥27940(税込))</span><br>
+									(1100,2300の2サイズ展開)
+
+								</h3>
+								<!-- テキストエリア -->
+								<p class="content-text2">
+									大容量パワーバンクと超高輝度1300ルーメンを実現。
+									乾電池不要の蓄電式でスマホ２台充電に対応し、充電中でもランタンを使用できる。<br>
+									ガスランタンよりも明度が高く、LEDなので経済的。<br>
+									白色・中間色・暖色の３パターンから選べ、各10段階の明るさ調節が可能。
+									<hr>
+									<strong>【Toyama's memo】</strong><br>
+									2300タイプを愛用中。LED暖色が選べるのがおすすめポイント。<br>
+									LED独特の眩しさを軽減し、自然に照らせる。<br>
+									また、USB端子を２つ備え付けてあるのでモバイルバッテリーとして活用することが出来る。
+									持っていると便利な1点
+								</p>
+							</div>
+							<p>商品ページ:<a href="https://www.logos.ne.jp/products/info/4603" target="_blank"
+									class="">ロゴス</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<!----------------------------------------------------椅子 --------------------------------------------------------------- -->
+				<div class="chair">
+					<h2>チェア</h2>
+					<!-- ヘリノックス -->
+					<div class="content-class" id="">
+						<!-- イメージ画像 -->
+						<div class="div-images">
+							<img src="https://s3-ap-northeast-1.amazonaws.com/aandfjp/helinox/web/2016ss/1200/Chair_Two_royal_lagoon.jpg"
+								name="tent-image" class="image-class">
+						</div>
+
+						<div class="text">
+							<div class="">
+								<p class="recomend-text">キャンプ好きが選ぶ王道チェアー</p><br>
+								<h3 class="content-text1">
+									<span class="prodact-text">ヘリノックス</span><br>
+									<span class="content-text">商品名:チェアツーホーム</span><br>
+									<span class="price-text">¥18,480(税込)</span>
+								</h3>
+								<!-- テキストエリア -->
+								<p class="content-text2">
+									コンフォートチェアをベースに背もたれを長くし、首から上もサポートし、
+									よりリラックスした体勢でご利用いただけます
+									。別売りのロッキングフットを組み合わせるとロッキングチェアになります。
+									<hr>
+									<strong>【Toyama's memo】</strong><br>
+									私は同メーカーの<a
+										href="https://www.amazon.co.jp/Helinox-%E3%83%98%E3%83%AA%E3%83%8E%E3%83%83%E3%82%AF%E3%82%B9-%E3%82%A2%E3%82%A6%E3%83%88%E3%83%89%E3%82%A2-%E3%82%B0%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89%E3%83%81%E3%82%A7%E3%82%A2-1822229/dp/B079LRSRRV/ref=asc_df_B079LRSRRV/?tag=jpgo-22&linkCode=df0&hvadid=218352599891&hvpos=&hvnetw=g&hvrand=13388587296029990615&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009461&hvtargid=pla-440644037961&psc=1&th=1&psc=1"
+										target="_blank">グランドチェア</a>を愛用中 <br>
+									こちらを紹介したのは僕も欲しい一押しチェアだからです。<br>
+									別売りの足に取り付けるボールを使用することで<br>
+									フローリングの家でも傷つけることなく使用可能。<br>
+									ヘリノックスの魅力はなんといってもコンパクトな収納と軽量！！
+
+								</p>
+							</div>
+							<p>商品ページ:<a href="https://www.helinox.co.jp/product/home_deco_beach/chair/detail/251/"
+									target="_blank" class="">ヘリノックス</a></p>
+						</div>
+					</div>
+
+					<!-- スノーピーク -->
+					<div class="content-class" id="">
+						<!-- イメージ画像 -->
+						<div class="div-images">
+							<img src="https://snowpeak-ec.s3.amazonaws.com/sys-master/AmazonS3Images/haf/h7f/8858346061854/LV-086_main_515Wx515H"
+								class="image-class">
+							<img src="https://assets.media-platform.com/roomie/dist/images/2018/12/181207_roomie_052.jpg"
+								class="image-class">
+						</div>
+
+						<div class="text">
+							<div class="">
+								<p class="recomend-text">妥協のない作りこみ</p><br>
+								<h3 class="content-text1">
+									<span class="prodact-text">スノーピーク</span><br>
+									<span class="content-text">商品名:Take!チェア ロング</span><br>
+									<span class="price-text">¥21,780(税込)</span>
+
+								</h3>
+								<!-- テキストエリア -->
+								<p class="content-text2">
+									見て楽しい、美しいフォルム。座ってうれしい、
+									包み込まれる安心感。丈夫な6号帆布は、
+									使い込むほどやさしく身体になじんでいきます。
+									竹とアルミのコンビネーションが美しい、
+									包み込まれるような座り心地。
+
+									<hr>
+									<strong>【Toyama's memo】</strong><br>
+									実際に使用しているわけではないので、お店での使用感を
+									お伝えしますと、体を包み込むような感覚からハンモックを椅子にしたような
+									座り心地がGood!　デメリットは深く座り込む点が食事の際にすこし
+									不自由に思う所かと...。
+
+
+								</p>
+							</div>
+							<p>商品ページ:<a
+									href="https://ec.snowpeak.co.jp/snowpeak/ja/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97/%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%83%BB%E3%83%81%E3%82%A7%E3%82%A2/Take%21%E3%83%81%E3%82%A7%E3%82%A2-%E3%83%AD%E3%83%B3%E3%82%B0/p/130991#&gid=1&pid=1"
+									target="_blank" class="">スノーピーク</a></p>
+						</div>
+					</div>
+
+					<!--  -->
+					<div class="content-class" id="">
+						<!-- イメージ画像 -->
+						<div class="div-images">
+							<img src="https://ec.coleman.co.jp/client_info/COLEMANJAPAN/itemimage/2000026745/2000026745.jpg"
+								class="image-class">
+						</div>
+
+						<div class="text">
+							<div class="">
+								<p class="recomend-text"></p><br>
+								<h3 class="content-text1">
+									<span class="prodact-text">コールマン</span><br>
+									<span class="content-text">商品名:レイチェア</span><br>
+									<span class="price-text">¥9,980(税込)</span>
+
+								</h3>
+								<!-- テキストエリア -->
+								<p class="content-text2">
+									3段階リクライニング式ハイバックチェア<br>
+									アルミニウムフレーム<br>
+
+									<hr>
+									<strong>【Toyama's memo】</strong><br>
+									実際に愛用しているチェア。
+									背面にテンションをかける構造になっている。
+									座り心地は可もなく不可もなくといった感想だが
+									３段階のリクライニングがキャンプをより開放的な気分にさせてくれる。
+
+
+								</p>
+							</div>
+							<p>商品ページ:<a href="https://ec.coleman.co.jp/item/2000026745.html" target="_blank"
+									class="">コールマン</a></p>
+						</div>
+					</div>
+
+
+				</div>
+				<!---------------------------------------------------- 机 --------------------------------------------------------------- -->
+				<div class="desk">
+					<h2>机</h2>
+
+					<!--コールマン  -->
+					<div class="content-class" id="">
+						<!-- イメージ画像 -->
+						<div class="div-images">
+							<img src="https://ec.coleman.co.jp/client_info/COLEMANJAPAN/itemimage/2000026802/2000026802.jpg"
+								class="image-class">
+						</div>
+
+						<div class="text">
+							<div class="">
+								<p class="recomend-text">最近の主流はロールテーブル</p><br>
+								<h3 class="content-text1">
+									<span class="prodact-text">コールマン</span><br>
+									<span class="content-text">商品名:ナチュラルウッドロールテーブル クラシック</span><br>
+									<span class="price-text">¥16,800(税込)</span>
+
+								</h3>
+								<!-- テキストエリア -->
+								<p class="content-text2">
+									天板に天然木を使用した ナチュラルな風合いの2ステージテーブル
+									ロール天板と収束型フレームでコンパクト収納<br>
+									高さ2段階調整可能（約40cm・70cm）<br>
+									価格を抑えたアルミタイプも用意(廃版かも...。)
+
+									<hr>
+									<strong>【Toyama's memo】</strong><br>
+									近頃のアウトドアショップではロールタイプのが多い印象。<br>
+									ちなみに僕もロールタイプを愛用しています。<br>
+									やはりコンパクトな収納は絶対条件!!<br>
+									僕は見た目重視なのでかっこいいの使ってます
+									(プリムスのアジャスタブルテーブル)
+
+
+
+								</p>
+							</div>
+							<p>商品ページ:<a href="https://ec.coleman.co.jp/item/2000026802.html" target="_blank"
+									class="">コールマン</a></p>
+						</div>
+					</div>
+
+					<!--ヨーラー  -->
+					<div class="content-class" id="">
+						<!-- イメージ画像 -->
+						<div class="div-images">
+							<img src="https://cdn.shopify.com/s/files/1/0073/6870/4082/products/1_2048x_900x_edc47411-425a-4331-94fb-7a95d1b12aae_720x.jpg?v=1628497402"
+								class="image-class">
+						</div>
+
+						<div class="text">
+							<div class="">
+								<p class="recomend-text">ソロキャン、ロースタイルの定番</p><br>
+								<h3 class="content-text1">
+									<span class="prodact-text">ヨーラー</span><br>
+									<span class="content-text">商品名:メッシュテーブル</span><br>
+									<span class="price-text">¥3,409(税込)</span>
+
+								</h3>
+								<!-- テキストエリア -->
+								<p class="content-text2">
+									使い方色々、バーナーとストーブの台として使用できるし、
+									焚き火やバーベキューのゴトクとしても使用できます。
+									ソロキャンプに良いサイズ。バーナーや食器が十分置けるし、
+									高さもロースタイルには丁度良い。
+
+									<hr>
+									<strong>【Toyama's memo】</strong><br>
+									ロースタイルのキャンプは玄人が好むスタイル<br>
+									実際使ったことはないが、今注目しているアイテム<br>
+									低価格なため、試しに買ってみるのも良いかも<br>
+
+
+								</p>
+							</div>
+							<p>商品ページ:<a
+									href="https://www.yolerhome.com/collections/%E3%83%A1%E3%83%83%E3%82%B7%E3%83%A5%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB/products/yoler-%E3%82%A2%E3%82%A6%E3%83%88%E3%83%89%E3%82%A2%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB-%E5%B0%82%E7%94%A8%E3%82%AD%E3%83%A3%E3%83%AA%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0%E4%BB%98-yr-mt306"
+									target="_blank" class="">ヨーラー</a></p>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- ------------------------------------------------------------------------------------------------------------- -->
+				<div class="調理器具">
+					<h2>調理器具</h2>
+
+					<!-- オピネルナイフ -->
+					<div class="content-class" id="">
+						<!-- イメージ画像 -->
+						<div class="div-images">
+							<img src="https://highmount.jp/wp-content/uploads/2021/05/stainless_image_A05.jpg"
+								class="image-class">
+						</div>
+
+						<div class="text">
+							<div class="">
+								<p class="recomend-text">定番中の定番オピネルナイフ</p><br>
+								<h3 class="content-text1">
+									<span class="prodact-text">オピネル</span><br>
+									<span class="content-text">商品名:ステンレススチール</span><br>
+									<span class="price-text">¥2,090～¥3,520(税込)</span>
+
+								</h3>
+								<!-- テキストエリア -->
+								<p class="content-text2">
+									ステンレススチールナイフはサビに強いので、
+									カーボンスチールナイフほど頻繁にメンテナンスを必要とせず、お手入れも簡単。
+									ブレードには「INOX」の文字が刻印されています。
+									<hr>
+									<strong>【Toyama's memo】</strong><br>
+									私も愛用しているナイフ。
+									折り畳み式でコンパクトに収納可能。<br>
+									錆にも強くお手入れ楽ちん。
+									一本は持っておきたい
+								</p>
+							</div>
+							<p>商品ページ:<a href="https://highmount.jp/brands/opinel/stainless-steel/" target="_blank"
+									class="">オピネル</a></p>
+						</div>
+					</div>
+
+					<!--スノーピーク包丁 -->
+					<div class="content-class" id="">
+						<!-- イメージ画像 -->
+						<div class="div-images">
+							<img src="https://snowpeak-ec.s3.amazonaws.com/sys-master/AmazonS3Images/h61/h2c/8891375157278/CS-207_switch16_515Wx515H"
+								class="image-class">
+						</div>
+
+						<div class="text">
+							<div class="">
+								<p class="recomend-text">ご家庭の使用感を求める方に</p><br>
+								<h3 class="content-text1">
+									<span class="prodact-text">スノーピーク</span><br>
+									<span class="content-text">商品名:マナイタセット M</span><br>
+									<span class="price-text">¥4,400(税込)</span>
+
+								</h3>
+								<!-- テキストエリア -->
+								<p class="content-text2">
+									板を開くと中に包丁がセットされている折り畳み式のマナ板。
+									包丁の落下防止用のマグネットによって包丁は固定。<br>
+
+									<hr>
+									<strong>【Toyama's memo】</strong><br>
+									実際に使用したことはないですが、まな板と包丁を一緒に持ち運べる点はプラス
+									折り畳み式なのでコンパクトさを十分。<br>
+									これからキャンプを始める方にはおすすめの1点。
+
+								</p>
+							</div>
+							<p>商品ページ:<a
+									href="https://ec.snowpeak.co.jp/snowpeak/ja/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97/%E8%AA%BF%E7%90%86%E5%99%A8%E5%85%B7%28%E3%82%AF%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E7%94%A8%E5%93%81%29/%E3%83%9E%E3%83%8A%E3%82%A4%E3%82%BF%E3%82%BB%E3%83%83%E3%83%88-M/p/2252"
+									target="_blank" class="">スノーピーク</a></p>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+		</main>
+		<!-- フッター領域 -->
+		<footer class="footer">
+			<p>&copy;Copyright KUJIRA Cafe. All right reserves</p>
+			<a href="#" id="page-top"><i class="blogicon-chevron-up"> TOP</i></a>
+		</footer>
+	</div>
+</body>
+<script>
+	$(function () {
+		$('a[href^="#"]').click(function () {
+			let speed = 1000;
+			let href = $(this).attr("href");
+			let target = $(href == "#" || href == "" ? 'html' : href);
+			let position = target.offset().top;
+			$("html, body").animate({ scrollTop: position }, speed, "swing");
+			return false;
+		});
+	});
+</script>
+
+</html>
